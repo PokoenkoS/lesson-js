@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: sans-serif;
+    height: 100vh;
+    padding-top: 50px;
+    position: relative;
+  }
+
+  body.open {
+    overflow-y: hidden;
+  }
+
+  body.open > .modal,
+  body.open > .overlay {
+    display: block;
+  }
+
+.title {
+    width: 100px;
+    height: 100px;
+}
+
+.modal {
+    width: 500px;
+    height: 500px;
+    background-color:  red;
+    font-size: 50px;
+    padding: 100px 90px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    display: none;
+      
+}
+
+.open-modal {
+    width: 100px;
+    height: 50px;
+    background-color: blueviolet;
+    border: 3px solid lime;
+    border-radius: 15px;
+    font-size: 30px;
+    padding: 1px;
+    display: block;
+    margin: 0 auto;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn-close {
+    width: 30px;
+    height:  30px;
+    outline: none;
+    border-radius: 50px;
+    font-size: 10px;
+    padding: 1px;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    background-color: aquamarine;
+    cursor: pointer;
+    top: 20px;
+    right: 20px;
+      
+}
+
+.text {
+    padding-top: 50px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+  }
+
+
+/*   
+ 
+  
+  .theme {
+    color: lime;
+    background-color: #000;
+    border: 3px solid lime;
+    border-radius: 15px;
+  }
+  
+    */

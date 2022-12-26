@@ -964,4 +964,31 @@
     // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    
 
-  
+//  const openModal = document.querySelector(".open-modal");
+//  console.log("🚀 ~ file: script.js:968 ~ openModal", openModal)
+//  const closeModal = document.querySelector(`.btn-close`);
+
+//  const overlay = document.getElementById(`overlay`);
+//  const openClass = "open"
+//  console.log("🚀 ~ file: script.js:973 ~ overlay", overlay)
+ 
+ 
+//  openModal.addEventListener("click", handleOpenModal);
+//  closeModal.addEventListener(`click`, handleCloseModal);
+//  overlay.addEventListener(`click`, handleCloseModal);
+
+//  function handleOpenModal(event) {
+//     document.body.classList.add(openClass)
+
+//  };
+
+//  function handleCloseModal(event) {
+//     document.body.classList.remove(openClass)
+
+//  };
+
+ 
+ 
+
+ 
+ 
