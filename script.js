@@ -1239,3 +1239,53 @@
 //
 // alert(names); // Bruce, Jhon, Maria
 
+// Напишіть код JavaScript, щоб кубик рухався, коли настискати стрілки вверх, вниз, вілво, вправо
+
+{/* <html>
+<html>
+<head>
+
+
+<style>
+  .cube {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: green;
+}
+</style>
+</head>
+<body>
+
+<div class="cube" style="top: 0; left: 0;"></div>
+</body>
+</html>
+
+const cube = document.querySelector(".cube");
+let step = 10;
+
+document.addEventListener("keydown", (e) => {
+  console.log(e);
+
+  let left = parseInt(cube.style.left);
+  let top = parseInt(cube.style.top);
+
+  if (e.code === "ArrowRight") {
+    if (left >= window.innerWidth) return;
+    cube.style.left = `${left + step}px`;
+  } else if (e.code === "ArrowLeft") {
+    if (left <= 0) return;
+    cube.style.left = `${left - step}px`;
+  } else if (e.code === "ArrowUp") {
+    if (top <= 0) return;
+    cube.style.top = `${top - step}px`;
+  } else if (e.code === "ArrowDown") {
+    if (top >= window.innerHeight) return;
+    cube.style.top = `${top + step}px`;
+  }
+
+  console.log(window);
+// }); */}
+
+// Напишіть програму JavaScript для добавлення та видалення елементів зі спадного списку.
+
