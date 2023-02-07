@@ -1164,7 +1164,7 @@
 // ];
 
 // console.log(totalVotes(voters)); // 7
-
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 // Маючи набір усіх елементів вашого списку бажань, обчисліть, скільки коштуватиме, щоб просто купити все одразу
 
 
@@ -1181,7 +1181,7 @@
 // ];
 
 // console.log(shoppingSpree(wishlist));
-
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 // Порахувати суму кожного додятнього елемента
 // Якщо дані вхідні дані є масивом чисел, повернути суму всіх додатніх. Якщо масив порожній або в ньому немає додатних чисел, поверніть 0.
 //
@@ -1221,7 +1221,7 @@
 //   return basketItems.filter(item => item.id != id)
 // }
 // console.log(removeProduct(28)); 
- 
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
  // Напишіть функцію, яка рахує кількість входжень значення в масив
 // let arr = [2,4,3,1,2,1];
 // Очікуваний результат: (arr, 1) => 2
@@ -1238,62 +1238,86 @@
 // let names = /* ... ваш код */
 //
 // alert(names); // Bruce, Jhon, Maria
-
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 // Напишіть код JavaScript, щоб кубик рухався, коли настискати стрілки вверх, вниз, вілво, вправо
 
-const cube = document.querySelector('.cube');
+// const cube = document.querySelector('.cube');
 
-document.addEventListener('keydown', mooveCube);
-let step = 10;
-function mooveCube (e) {
-  let left = parseInt(cube.style.left);
-  let top = parseInt(cube.style.top);
- 
-console.log(e);
- if (e.code === 'ArrowRight') {
-  if (left >= window.innerWidth) return;
-  cube.style.left = `${step+left}px`;
- console.log(cube.style.left)
- }else if (e.code === 'ArrowLeft'){
-  if(left<=0) return;
-  cube.style.left = `${left-step}px`;
- }else if (e.code === 'ArrowUp'){
-  if(top<=0) return;
-  cube.style.top = `${top-step}px`;
- }else if (e.code === 'ArrowDown'){
-  if (top >= window.innerHeight) return;
-  cube.style.top = `${top+step}px`;
- }
-}
-innerHeight:788
-innerWidth:1512
-console.log(window);
-
-// const cube = document.querySelector(".cube");
+// document.addEventListener('keydown', mooveCube);
 // let step = 10;
-
-// document.addEventListener("keydown", (e) => {
-//   console.log(e);
-
+// function mooveCube (e) {
 //   let left = parseInt(cube.style.left);
 //   let top = parseInt(cube.style.top);
+ 
+// console.log(e);
+//  if (e.code === 'ArrowRight') {
+//   if (left >= window.innerWidth) return;
+//   cube.style.left = `${step+left}px`;
+//  console.log(cube.style.left)
+//  }else if (e.code === 'ArrowLeft'){
+//   if(left<=0) return;
+//   cube.style.left = `${left-step}px`;
+//  }else if (e.code === 'ArrowUp'){
+//   if(top<=0) return;
+//   cube.style.top = `${top-step}px`;
+//  }else if (e.code === 'ArrowDown'){
+//   if (top >= window.innerHeight) return;
+//   cube.style.top = `${top+step}px`;
+//  }
+// }
+// innerHeight:788
+// innerWidth:1512
+// console.log(window);
 
-//   if (e.code === "ArrowRight") {
-//     if (left >= window.innerWidth) return;
-//     cube.style.left = `${left + step}px`;
-//   } else if (e.code === "ArrowLeft") {
-//     if (left <= 0) return;
-//     cube.style.left = `${left - step}px`;
-//   } else if (e.code === "ArrowUp") {
-//     if (top <= 0) return;
-//     cube.style.top = `${top - step}px`;
-//   } else if (e.code === "ArrowDown") {
-//     if (top >= window.innerHeight) return;
-//     cube.style.top = `${top + step}px`;
-//   }
 
-  // console.log(window);
-// }); */}
-
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 // Напишіть програму JavaScript для добавлення та видалення елементів зі спадного списку.
+//  const colors = document.getElementById("colorSelect");
+//  console.log(colors);
+//  const remove = document.getElementById("removeOption");
+//  const addinput = document.getElementById("add");
+//  const addOption = document.getElementById("addOption");
 
+// remove.addEventListener(`click`, removeColor);
+
+// function removeColor(e) {
+  
+//   colors.remove(colors.textContent);
+  
+// }
+
+// addOption.addEventListener(`click`, addColor);
+
+// function addColor(e) {
+//   if (addinput.value.tim()){
+// return;
+//    } 
+
+// const color = `<option>${addinput.value}</option>`
+
+// colors.insertAdjacentHTML('beforeend', color);
+// addinput.value = "";
+// }
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// Напишіть програму JavaScript, щоб виділяти жирні слова (<strong>) наступного абзацу, наводячи курсор миші на посилання
+
+
+const link = document.getElementById("link");
+const text = document.getElementById("text");
+const allText = document.querySelectorAll("strong");
+
+
+link.addEventListener(`mouseover`, onMouseover);
+link.addEventListener(`mouseout`, onMouseout);
+
+function onMouseover(e) {
+  changeColor('red');
+console.log(e);
+}
+function onMouseout(e) {
+  changeColor('orange');
+  console.log(e);
+  }
+  function changeColor(color) {
+    allText.forEach(tag => tag.style.color = color)
+  }
