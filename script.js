@@ -1302,22 +1302,132 @@
 // Напишіть програму JavaScript, щоб виділяти жирні слова (<strong>) наступного абзацу, наводячи курсор миші на посилання
 
 
-const link = document.getElementById("link");
-const text = document.getElementById("text");
-const allText = document.querySelectorAll("strong");
+// const link = document.getElementById("link");
+// const text = document.getElementById("text");
+// const allText = document.querySelectorAll("strong");
 
 
-link.addEventListener(`mouseover`, onMouseover);
-link.addEventListener(`mouseout`, onMouseout);
+// link.addEventListener(`mouseover`, onMouseover);
+// link.addEventListener(`mouseout`, onMouseout);
 
-function onMouseover(e) {
-  changeColor('red');
-console.log(e);
-}
-function onMouseout(e) {
-  changeColor('orange');
-  console.log(e);
-  }
-  function changeColor(color) {
-    allText.forEach(tag => tag.style.color = color)
-  }
+// function onMouseover(e) {
+//   changeColor('red');
+// console.log(e);
+// }
+// function onMouseout(e) {
+//   changeColor('orange');
+//   console.log(e);
+//   }
+//   function changeColor(color) {
+//     allText.forEach(tag => tag.style.color = color)
+//   }
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+// const person = {
+//   firstName: 'Jacob',
+//   showName() {
+//   console.log(this.firstName);
+//   },
+//   };
+  
+// let foo = function(callback) {
+//   // callback();
+//   };
+//   foo(person.showName);
+// const sum = (... numbers) => numbers.reduce((total, number) => total + number, 2);
+// const result = sum(1, 5, 20, 10);
+// console.log(result);
+// const multiplyByValue = (value, base, ...numbers) => {
+//   return numbers.map(number => number * value + base);
+//   };
+//   console.log(multiplyByValue(2, 100, 1, 5, 20, 10));
+// const names = ['bob', ...['donald'], 'suzy', 'lacy', ...['richard', 'alex']];
+// console.log(names);
+
+
+// for(var i = 10; i < 35; i += 5) {
+//   console.log(i);
+// }
+
+// const min = Math.min (... [1, 5, -1, -10]);
+// console.log(min);
+
+
+// const name = 'bob';
+// const age = 20;
+// const obj = {
+// name,
+// age
+// };
+// console.log(obj);
+// const confused = 'no';
+// const myKey = confused;
+
+// const obj = {
+// [myKey]: false,
+// };
+
+// console.log(obj);
+// const piece = {
+//   x: 0,
+//   y: 0,
+//   move(x, y) {
+//   this.x = x;
+//   this.y = y;
+//   },
+//   };
+  
+//   piece.move(10, 10);
+//   console.log(piece);
+// const [a, ,b] = 'JavaScript is awesome'.split(' ');
+// console.log(a, b);
+// const { name, age, gender = 'm', hairColor: color } = {
+//   name: 'Jacob',
+//   age: 20,
+//   hairColor: 'blue',
+//   };
+  
+//   console.log(name, age, gender, color);
+// const dog = {name: 'Poly'};
+
+// function showDogName() {
+// console.log(this.name);
+// }
+
+// const boundShowDogName = showDogName.bind(dog);
+// boundShowDogName();
+// const userA = {
+//   name: 'Mango',
+//   age: 5,
+//   };
+  
+//   const userB = {
+//   ...userA,
+//   age: 10,
+//   happy: true,
+//   };
+  
+//   console.log(userB);
+// const fn = (arr, value) => arr.filter(el => el > value);
+
+// console.log(fn([1, 2, 3, 4, 5], 3));
+
+
+
+
+// const form = document.querySelector('form');
+// const list = document.querySelector('.list');
+
+// form.addEventListener('submit', onSearch);
+
+// function onSearch(e) {
+//   e.preventDefault();
+
+//   const countryName = form.elements[0].value;
+//   fetch(`http://universities.hipolabs.com/search?country=${countryName}`).then(response => response.json()).then(result => renderList(result))
+// }
+
+// function renderList(items) {
+// list.innerHTML = items.map(({name, web_pages:[url]}) => `<li><a  href="${url}" target="_blank">${name}</a></li>`).join("");
+// }
+  
